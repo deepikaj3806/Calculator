@@ -18,6 +18,9 @@ let expression = "";
 
 let history = [];
 
+// =======================
+// Calculator Buttons
+// =======================
 
 buttons.forEach(button=>{
 
@@ -59,6 +62,9 @@ buttons.forEach(button=>{
 
 });
 
+// =======================
+// Calculate
+// =======================
 
 function calculate(){
 
@@ -92,6 +98,9 @@ function calculate(){
 
 }
 
+// =======================
+// Update History
+// =======================
 
 function updateHistory(){
 
@@ -108,6 +117,10 @@ function updateHistory(){
     });
 
 }
+
+// =======================
+// Theme Toggle
+// =======================
 
 themeBtn.addEventListener("click",()=>{
 
@@ -129,6 +142,9 @@ themeBtn.addEventListener("click",()=>{
 
 });
 
+// =======================
+// Copy Result
+// =======================
 
 copyBtn.addEventListener("click",()=>{
 
@@ -144,6 +160,10 @@ copyBtn.addEventListener("click",()=>{
 
 });
 
+// =======================
+// History Panel
+// =======================
+
 historyBtn.addEventListener("click",()=>{
 
     historyPanel.classList.add("active");
@@ -155,6 +175,10 @@ closeHistory.addEventListener("click",()=>{
     historyPanel.classList.remove("active");
 
 });
+
+// =======================
+// Keyboard Support
+// =======================
 
 document.addEventListener("keydown",(e)=>{
 
