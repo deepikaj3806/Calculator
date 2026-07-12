@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h2>Calculator</h2>
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+    <div class="display">
+        <input
+        type="text"
+        id="display"
+        readonly
+        placeholder="0">
+    </div>
+
+    <div class="buttons">
+        <button class="operator clear">AC</button>
+        <button class="operator delete">DEL</button>
+        <button class="operator">%</button>
+        <button class="operator">/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+    </div>
+
+    <div class="bottom">
+        <button id="copyBtn">
+            <i class="fa-solid fa-copy"></i>
+            Copy
+        </button>
+        <button id="historyBtn">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            History
+        </button>
+    </div>
+</div>
+
+<div id="historyPanel">
+    <div class="historyHeader">
+        <h3>History</h3>
+        <button id="closeHistory">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <ul id="historyList">
+    </ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
